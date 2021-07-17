@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Mon projet JS</title>
+		<link rel="stylesheet" href="https://bootswatch.com/4/darkly/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="../css/projetJs.css">
+		<script type="text/javascript" src="../js/monScript.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
+	</head>
+<body>
+	<nav>
+		<!-- <ul>
+			<li class="operation"><a href="">Liste des opérations possibles</a></li>
+		</ul> -->
+		<ul>
+			<li><a id="On_Inser" href="Ma_corrigé.html">Insertion</a></li>
+			<li><a id="On_aff" href="Page_affichage.html">Affichage</a></li>
+			<li><a id="On_TriefVille" href="#">Trier par ville</a></li> 
+			<li><a id="On_Supp" href="#">Suppréssion</a></li>
+			<li><a id="On_PlusJeune" href="#">Plus jeune</a></li>
+			<li><a id="On_Modif" href="#">Modification...</a> 
+				<!-- <ul class="submenu">
+	 				<li><a id="On_ModifNumb" href="#">Numéro</a></li>
+	 				<li><a id="On_ModifPrenom" href="#">Prénom</a></li>
+	 				<li><a id="On_ModifNom" href="#">Nom </a></li>
+	 				<li><a id="On_ModifAge" href="#">L'age</a></li>
+	 				<li><a id="On_ModifSexe" href="#">Sexe</a></li>
+	 				<li><a id="On_ModifVille" href="#">La ville de naissance</a></li>
+	 			</ul> -->
+			</li>
+			<li><a href="#" id="On_Occu">Occurence</a></li>
+			<li><a href="#" id="On_MoyAge">Moyenne D'Age</a></li>
+			<li><a href="trParVille.html">Par Ville</a></li>
+		</ul>
+	</nav>
+	<div class="blog">
+		<div class="container" style="width : 450px; height: auto">
+		    <form action="" method="POST">
+		        <div class="form-group">
+		            <label for="numbr">Numéro</label>
+		            <input type="text" id="numbr" name="numbr" placeholder="Numéro de carte" class="form-control">
+		        </div>
+		        <div class="form-group">
+		            <label for="prenom">Prenom</label>
+		            <input type="text"  id="prenom" name="prenom" placeholder="Votre prénom"  class="form-control">
+		        </div>
+		        <div class="form-group">
+		            <label for="nom">Nom</label>
+		            <input type="text" id="nom" name="nom" placeholder="Votre nom" class="form-control">
+		        </div>
+		        <div class="form-group">
+		            <label for="note">Note</label>
+		            <input type="number" id="note" name="note" placeholder="Votre note" class="form-control">
+		        </div>
+		         <div class="form-group">
+		            <label for="age">Age</label>
+		            <input type="number" id="age" name="age" placeholder="Votre âge" class="form-control">
+		        </div>
+		        <div class="form-group">
+		            <label for="sexe">Sexe</label>
+		            <select name="sexe" class="form-control" id="sexe">
+						<option value="">Femmelle</option>
+						<option value="">Mâle</option>
+						<option value="">Nom precisé</option>
+					</select>
+		        </div>
+		        <div class="form-group">
+		            <label for="villNaiss">Ville de naissance</label>
+		            <input type="text"  id="villNaiss" name="villNaiss" placeholder="ville de naissance" class="form-control">
+		        </div>
+		        <button class="btn btn-success" id="button">Inserer</button>
+		    </form>
+		</div>
+	</div>
+</body>
+	<script type="text/javascript" src="../js/monScript.js">
+		// je déclare une variable JSON pour y stocker toutes les informations d'un étudiant
+
+		var Liste2 = '{"Etudiant" :['+
+			'{"numero":"FR451", "nom":"talla","prenom":"Saliou", "note":"10","sexe":"Mâle", "ville":"Dakar"}]}';
+	// afficher = document.getElementById('afficher');
+	
+	// afficher.addEventListener('click', function affichage(){
+
+	// 	for(var i = 0; i <= obj.Etudiant[length]; i++){
+	// 		console.log(obj.Etudiant[i].prenom+obj.Etudiant[i].nom);
+	// 	}
+	// });
+
+		var numbr = document.getElementById('numbr');
+		var prenom = document.getElementById('prenom');  
+		var nom = document.getElementById('nom');
+		var note = document.getElementById('note');
+		var age = document.getElementById('age');
+		var sexe = document.getElementById('sexe');
+		var choice = sexe.selectedIndex;
+		var sexeValue = sexe.options[choice]; //recupére le value
+		var villNaiss = document.getElementById('villNaiss');
+		var form = document.getElementById('form');
+
+		// var afficher = document.getElementById('afficher');
+		// var formAtJsb =JSON.parse(Liste);
+
+		//on convertit les données au format JScript
+		var obj = JSON.parse(Liste2);
+
+		form.addEventListener('click',function(){
+			alert(choice);
+		});
+	</script> 
+</html>
+</html>

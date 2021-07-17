@@ -1,0 +1,179 @@
+body{
+	padding: 0px;
+	margin: 0px;
+	font-family: verdana, "sans serif";
+	background-color: #000;
+	/*background: url('../bg-01-01-01.jpg');*/
+	/*background-repeat: no-repeat;*/
+	background-size: 100% 100%;
+}
+nav{
+	/*padding-left: 250px;*/
+	width: auto; 
+	background-color: #424558;
+}
+nav > ul{
+	padding: 0px;
+	margin: 0px;
+}
+nav > ul > li{
+	float: left;
+	position: relative;
+}
+nav > ul::after{
+	content: "";
+	display: table;
+	clear: both;
+
+}
+nav li{
+	list-style-type: none;
+}
+.submenu{
+	position: relative;
+	top: 5%;
+	left: 0px;
+	display: none
+}
+.form-group{
+	display:block;
+}
+nav label{
+	display: none;
+}
+
+nav a{
+	display: inline-block;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+nav > ul > li > a{
+	/*padding: 30px 30px;*/
+	color: white;
+}
+nav >ul > li:hover a{
+	background-color: gray;
+	text-decoration: none;
+	color: white;
+}
+nav li:hover .submenu{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	padding: 0px;
+	z-index: 10000;
+}
+.submenu li{
+	/*border-top: 1px solid gray;*/
+	/*min-height: 40px;*/
+}
+.submenu li a {
+	text-align: center;
+	color: white;
+	font-size: 14px;
+	padding: 15px 20px;
+}
+
+.submenu li a:hover {
+	transition: 0.9s;
+	background-color: rgba(58,17,09,0.15);
+	color: black;
+}
+.operation{
+	left: -10%;
+	width: 100%;
+	border: none;
+}
+nav li{
+	display: inline-block;
+	list-style-type: none;
+	border-right: 1px solid #AAA;
+	text-align: center;
+	text-transform: uppercase;
+	width: 170px;
+	height: 40px;
+	line-height: 40px;
+}
+
+nav li a{
+	text-decoration: none;
+	display: block;
+	color: white
+}
+h1{
+
+	margin: -5px 10px;
+}
+a:hover,button:hover{
+	background-color: rgba(39,40,34, 0.2); 
+	color :white;
+}
+
+label{
+	float: left;
+	font-weight: bold;
+	font-size: 17px;
+}
+
+div{
+	display: inline-block;
+}
+.blog{
+	/*border-top: 4px solid white;*/
+	padding: 10px 10px;
+	margin: 5px 5px;
+	position: relative;
+	top: 7%;
+	left: 0%;
+	text-align: center
+}
+table, label{
+	text-align: left;
+	display: block;
+	text-align: center;
+}
+label{
+	height:20px;
+}
+
+#button{
+	min-height: 40px;
+	min-width: 170px;
+	text-transform: uppercase;
+	/*background-color: white;
+	color: #424558;*/
+}
+
+td{
+	display: block;
+}
+
+tr{
+	margin: 20px 10px;
+
+}
+input, select{
+	width: 200px;
+	height: 20px;
+	margin: 2px; 
+} 
+
+.onglet1, .onglet2, .onglet3{
+	position: relative;
+	top: 5%;
+	left: 0px;
+	/*display: none;*/
+}
+
+nav li:hover .onglet1{
+	display: inline-block;
+	position: absolute;
+	top: 100%;
+	padding: 0px;
+	z-index: 1000;
+}
+.btn-success{
+	background-color: #434558;
+	color: white;
+	border: none;
+}

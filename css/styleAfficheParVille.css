@@ -1,0 +1,68 @@
+body{
+    border-top: 5px solid white;
+
+    background-color: #424558;
+}
+#On_TrieParVilleNaiss{
+
+    border-top: 5px solid white;
+    width: auto;
+    height: 50px;
+    position: absolute;
+    text-align: center;
+    margin: 10px 20px 0px 0px;
+    font-weight: bold;
+    font-size: 17px;
+}
+#On_TrieParVilleNaiss:hover{
+    background-color: #00bc8c;
+    color:white ;
+}
+h1{
+    background-color: #424558;
+    color : white;
+    text-align:center;
+}
+th{
+    width: 130px;
+    border: 1px solid black;
+    background-color: #424558;
+    color: white;
+    padding: 10px 10px;
+
+}
+td{
+    display: inline-block;
+    font-weight: bold;
+    border: 1px solid black;
+    width: 130px;
+    text-align: center;
+    background-color: #e1ffff;
+    padding: 10px 10px;
+}
+td{
+    display: inline-block;
+    color: black;
+}
+tr:hover {
+    background-color: white;
+}
+/*tr #myTr, tr{
+    color: white;
+    font-family: "comic sans ms";
+}*/
+tr{
+    margin: 10px 10px;
+}
+table{
+    position: relative;
+    left: 17%;
+    margin-top: 10px;
+    border-top: 5px solid white;
+    border-collapse: collapse;
+}
+.myDiv > tr{
+    padding: 20px;
+    display: block;
+    margin: 10px 10px;
+}
